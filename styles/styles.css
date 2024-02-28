@@ -133,6 +133,7 @@ button {color: var(--white); border-radius: 25px; border: 2px solid var(--black)
 @media(max-width: 1250px){
     .banner .container {background-size: 600px; background-position: bottom; padding-top: 40px;}
     .banner .container .texts-col {width: 100%; text-align: center; align-items: center; padding-bottom: 50vh;}
+    .banner .container .texts-col h1 {font-size: 72px;}
 }
 
 @media(max-width: 800px){
@@ -254,6 +255,10 @@ margin-bottom: 30px;
     .banner2 .container .texts p {color: white; width: 80%; padding-left: 0px;}
 }
 
+@media (max-width: 980px){
+    .banner2 .container .texts h2 {font-size: 38px;}
+}
+
 /* banner2 */
 
 /* combos */
@@ -291,12 +296,13 @@ margin-bottom: 30px; width: 350px; height: 400px;
 }
 
 @media (max-width: 980px){
-    
+    .combos .container .title h2 {width: 100%; font-size: 38px;}
+    .combos .container .title img {height: 100px;}
 }
 
 @media (max-width: 650px) {
     .combos .container .promo-cards .card {width: 240px;}
     .combos .container .promo-cards .card .background-radius {width: 200px; height: 230px; border-radius: 140px 0 0 0;}
-    .combos .container .promo-cards .card img {width: 140px; position: relative; top: -171px; left: 131px; z-index: 1;}
-.combos .container .promo-cards .card .imageunder {width: 140px; position: relative; top: 18px; left: 32px; }
+    .combos .container .promo-cards .card img {width: 140px; position: relative; top: -171px; left: 100px; z-index: 1;}
+.combos .container .promo-cards .card .imageunder {width: 140px; position: relative; top: 18px; left: 11px; }
 }
