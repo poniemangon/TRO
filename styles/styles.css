@@ -13,6 +13,7 @@
     --lightred: #be1027;
     --grey: #bcb095;
     --lightyellow: #feeec9;
+    --pink: #fd929b;
 
 }
 
@@ -99,7 +100,16 @@ button {color: var(--white); border-radius: 25px; border: 2px solid var(--black)
 
 /* banner */
 
-.banner  {background-color:  var(--lightblue); padding-top: 160px; }
+
+
+.banner  {background-color:  var(--lightblue); padding-top: 160px;}
+
+@media(max-width: 1250px){
+    .banner {padding-top: 143px;}
+}
+
+
+
 
 .banner .container {padding: 40px 0; background-image: url(../images/parrot.png); background-repeat: no-repeat; background-position: right; }
 
@@ -113,4 +123,31 @@ button {color: var(--white); border-radius: 25px; border: 2px solid var(--black)
 
 .banner .container .texts-col button {background-color: var(--yelloworange);}
 
+@media(max-width: 1250px){
+    .banner .container {background-size: contain; background-position: bottom;}
+    .banner .container .texts-col {width: 100%; text-align: center; align-items: center; padding-bottom: 70vh;}
+}
+
+@media(max-width: 550px){
+    .banner .container {background-size: contain; background-position: bottom;}
+    .banner .container .texts-col {width: 100%; text-align: center; align-items: center; padding-bottom: 30vh;}
+}
+
 /* banner */
+
+/* cards */
+
+.cards .background-radius {
+padding: 40px 20px; padding-bottom: 5px ;border-radius: 140px 140px 0 0; border: 1px solid black;
+}
+
+.cards .texts {
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.colombia1 {background: repeating-linear-gradient(-30deg,var(--orange) 0,var(--orange) 20px, var(--darkorange) 20px, var(--darkorange) 40px
+    );}
+
+.colombia2 {background: repeating-linear-gradient(-30deg,var(--redorange) 0,var(--redorange) 20px, var(--brown) 20px, var(--brown) 40px
+    );}
