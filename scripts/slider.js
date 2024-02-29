@@ -1,6 +1,8 @@
 $('.carousel').slick({
   arrows: false,
   infinite: false,
+  autoplay: true,
+  autoplaySpeed: 2000,
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 4,
@@ -29,4 +31,6 @@ $('.carousel').slick({
       }
   }]
 });
+
+
 
