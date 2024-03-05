@@ -69,11 +69,12 @@ button{ transition: ease 0.6s;}
 
 .header {background-color: var(--lightyellow); padding: 35px 0; position: fixed; width: 100%; box-shadow: 0px 1px 5px rgb(230, 230, 230); z-index: 2; }
 .header a {font-weight: 500;}
-
+.header i {cursor: pointer;}
 .header ul {column-gap: 20px;}
 
+
 .header .third-col {column-gap: 10px; justify-content: center;}
-.header .third-col div.d-flex {border-bottom: 1px solid var(--grey); max-width: 500px;  }
+.header .third-col div.d-flex {border-bottom: 1px solid var(--grey);  }
 .header .third-col div.d-flex .fa-magnifying-glass { color: var(--grey); position: relative; top: 3px; padding-right: 5px;}
 .header input {background-color: transparent; border: none; max-width: 100px; color: var(--grey);}
 .header .third-col .icons i {font-size: 20px; position: relative; top: 5px;}
@@ -105,7 +106,7 @@ button {color: var(--white); border-radius: 15px; border: none; background-color
    
     .burger-icons i {line-height: 1; font-size: 25px;}
     .fa-solid.fa-bars {display: block; font-size: 35px; color: var(--darkred); line-height: 1;}
-    .burgermenu {padding-top: 40px;}
+    .burgermenu {padding-top: 20px;}
     .burgermenu ul {display: flex; flex-direction: column; row-gap: 20px; align-items: center; text-align: center;}
     .burgermenu ul li {border-bottom: 1px solid var(--grey); width: 100%; padding-bottom: 20px; margin: auto;}
     .burgermenu ul li.d-flex {justify-content: center; border: none;}
@@ -144,7 +145,7 @@ right: 7px;}
 }
 
 @media(max-width: 500px){
-    .banner {padding-top: 200px;}
+    .banner {padding-top: 150px;}
 
 }
 
@@ -189,11 +190,11 @@ right: 7px;}
 
 /* cards */
 
-.cards .carousel .slick-prev:before{ font-family: 'FontAwesome'; content:"\f053" ; color: var(--grey); color: var(--darkred);}
+.cards .carousel .slick-prev:before{ font-family: 'FontAwesome'; content:"\f053" ; color: var(--grey); color: var(--darkred); }
 
-.cards .carousel .slick-next:before{ font-family: 'FontAwesome'; content:"\f054" ; color: var(--grey); color: var(--darkred);}
+.cards .carousel .slick-next:before{ font-family: 'FontAwesome'; content:"\f054" ; color: var(--grey); color: var(--darkred); }
 
-.cards .carousel button {background-color: transparent!important;}
+.cards .carousel button {background-color: transparent!important; top: 160px;}
 
 .cards .carousel button {appearance: auto;}
 
@@ -317,6 +318,9 @@ margin-bottom: 20px;
 .banner2 .container h2{color: white; font-size: 50px; width: 25%;line-height: 1.2; padding-left: 40px;}
 .banner2 .container p{color: white; width: 90%; padding-left: 40px;}
 
+.banner2image {overflow: hidden;}
+
+.banner2image img {top: 18px; position: relative;}
 
 @media (max-width: 1400px){
     .banner2 .wrapper {width: 100%; background-image: none;}
