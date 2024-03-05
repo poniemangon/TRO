@@ -22,7 +22,7 @@
 
 }
 
-* {margin: 0; padding: 0}
+* {margin: 0; padding: 0; }
 
 
 button { cursor: pointer;}
@@ -76,7 +76,8 @@ button{ transition: ease 0.6s;}
 .header .third-col {column-gap: 10px; justify-content: center;}
 .header .third-col div.d-flex {border-bottom: 1px solid var(--grey);  }
 .header .third-col div.d-flex .fa-magnifying-glass { color: var(--grey); position: relative; top: 3px; padding-right: 5px;}
-.header input {background-color: transparent; border: none; max-width: 100px; color: var(--grey);}
+.header input {background-color: transparent; border: none; max-width: 100px; color: var(--grey); }
+
 .header .third-col .icons i {font-size: 20px; position: relative; top: 5px;}
 
 
@@ -111,6 +112,7 @@ button {color: var(--white); border-radius: 15px; border: none; background-color
     .burgermenu ul li {border-bottom: 1px solid var(--grey); width: 100%; padding-bottom: 20px; margin: auto;}
     .burgermenu ul li.d-flex {justify-content: center; border: none;}
     .logo-search {width: 100%;}
+    header input {padding-bottom: 20px;}
 }
 
 @media(max-width: 500px) {
@@ -166,18 +168,18 @@ right: 7px;}
 
 @media(max-width: 1250px){
     .banner .container {background-size: 600px; background-position: bottom; padding-top: 50px;}
-    .banner .container .texts-col {width: 100%; text-align: center; align-items: center; padding-bottom: 60vh;}
+    .banner .container .texts-col {width: 100%; text-align: center; align-items: center; padding-bottom: 70vh;}
     .banner .container .texts-col h1 {font-size: 72px;}
 }
 
 @media(max-width: 800px){
     .banner .container {background-size: 500px; background-position: bottom;}
-    .banner .container .texts-col {width: 100%; text-align: center; align-items: center; padding-bottom: 55vh;}
+    .banner .container .texts-col {width: 100%; text-align: center; align-items: center; padding-bottom: 60vh;}
 }
 
 @media(max-width: 600px){
     .banner .container {background-size: 100%; background-position: bottom; padding-top: 40px;}
-    .banner .container .texts-col {padding-bottom: 60%;}
+    .banner .container .texts-col {padding-bottom: 90%;}
     .banner .container .texts-col h1 {font-size: 60px;}
   
 }
@@ -194,7 +196,7 @@ right: 7px;}
 
 .cards .carousel .slick-next:before{ font-family: 'FontAwesome'; content:"\f054" ; color: var(--grey); color: var(--darkred); }
 
-.cards .carousel button {background-color: transparent!important; top: 160px;}
+.cards .carousel .slick-next, .cards .carousel .slick-prev {background-color: transparent!important; top: 160px;}
 
 .cards .carousel button {appearance: auto;}
 
@@ -218,6 +220,7 @@ right: 7px;}
     .cards .title {flex-direction: column; align-items: center;}
     .cards .title .flowers1 {padding-bottom: 20px;}
     .cards .title .flowers2 {padding-top: 20px;}
+    .cards .title h2 {font-size: 38px;}
 }
 
 @media (max-width: 400px) {
@@ -251,7 +254,7 @@ margin-bottom: 20px;
     text-align: center;
 }
 
-.cards .card .texts h5 {font-size: 20px; font-weight: 300;}
+.cards .card .texts h5 {font-size: 20px; font-weight: 300; font-family: "Poppins", sans-serif;}
 .cards .card .texts p {font-size: 18px; font-weight: 500;}
 .cards .card .texts h4 {font-size: 25px; font-weight: 300; font-family: 'MuseoModerno', sans-serif; color: white;}
 
@@ -351,17 +354,30 @@ margin-bottom: 20px;
 
 .combos .container .promo-cards {margin-top: 100px;}
 .combos .container .promo-cards button {border: none; background-color: white; color: black; font-size: 16px;}
-.combos .container .promo-cards .carousel2 {margin: auto;}
+.combos .container .promo-cards .carousel2 {margin: auto; }
 .combos .container .promo-cards .card {margin: auto;}
 .combos .container .promo-cards .card .background-radius {margin: auto;
 padding: 30px 20px; padding-bottom: 5px ;border-radius: 153px 0 0 0; border: 1px solid black;
 margin-bottom: 30px; width: 350px; height: 400px; 
 }
 
+.carousel2 .slick-prev:before{ font-family: 'FontAwesome'; content:"\f053" ; color: var(--grey); color: var(--darkred); }
+
+.cards .carousel button {appearance: auto;}
+
+.carousel2 .slick-next {right: 0px;}
+
+.carousel2 .slick-prev {left: 0px;}
+.carousel2 .slick-next:before{ font-family: 'FontAwesome'; content:"\f054" ; color: var(--grey); color: var(--darkred); }
+
+.combos .container .promo-cards  .slick-next, .combos .container .promo-cards  .slick-prev {background-color: transparent; color: transparent;}
+
+.combos .container .promo-cards  .slick-next:hover, .combos .container .promo-cards  .slick-prev:hover {background-color: transparent; color: transparent;}
+
 .combos .container .promo-cards .card img {width: 467px;max-width: none;position: relative;top: -73px;left: -74px;}
 
 
-.combos .container .promo-cards .card {width: 400px; margin: auto;} 
+.combos .container .promo-cards .card {width: 400px; margin: auto; padding-top: 55px;} 
 
 .promo-cards .texts {
     flex-direction: column;
@@ -372,18 +388,19 @@ margin-bottom: 30px; width: 350px; height: 400px;
 }
 
 .promo-cards .card .texts h4{font-size: 25px; font-weight: 300; font-family: 'MuseoModerno', sans-serif; color: white;}
-.promo-cards .card .texts p {font-size: 18px; font-weight: 500; color: white;}
-.promo-cards .card  h2 {font-size: 72px; color: var(--lightgold); shape-outside: circle(50%);}
+.promo-cards .card .texts p {font-size: 18px; font-weight: 800; color: white; font-family: 'Poppins', sans-serif;}
+
 
 
 @media (max-width: 1250px){
     .combos .container .title  {flex-direction: column;  align-items: center;}
     .combos .container .title h2 {width: 100%; text-align: center;}
-    .promo-cards {flex-direction: column; row-gap: 80px;}
+    /* .promo-cards {flex-direction: column; row-gap: 80px;} */
     
 }
 
 @media (max-width: 650px){
+    .combos .container .promo-cards {margin-top: 0;}
     .combos .container .title h2 {font-size: 36px;}
     .combos .container .title img {height: 98px;}
     .combos .container .promo-cards .card {width: auto;}
@@ -408,7 +425,7 @@ margin-bottom: 30px; width: 350px; height: 400px;
 @media (max-width: 400px){
     .combos .container .title h2 {font-size: 32px;}
     .combos .container .title img {height: 98px;}
-    .combos .container .promo-cards .card {width: auto;}
+    .combos .container .promo-cards .card {width: auto; }
     .combos .container .promo-cards .card img {scale: 0.5}
     .combos .container .promo-cards .card .background-radius {
     padding: 21px 20px;

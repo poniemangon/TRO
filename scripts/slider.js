@@ -32,5 +32,22 @@ $('.carousel').slick({
   }]
 });
 
+$('.carousel2').slick({
+    arrows: false,
+    infinite: false,
+    autoplay: true,
+    autoplaySpeed: 8000,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    responsive: [{
+        breakpoint: 1250,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+        }
+    },]
+  });
 
 
