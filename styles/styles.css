@@ -445,7 +445,7 @@ footer .col i {padding-right: 6px; color: #818385;}
 
 @media (max-width: 1250px){
     footer .main-footer .container, footer .main-footer .container .lists, footer img, footer div {flex-direction: column; margin: auto; text-align: center;}
-    footer .logo {margin: auto;}
+    footer .logo {margin: auto; width: 100%;}
     .indent {max-width: none;}
     footer .lists {row-gap: 30px;}
     footer ul {align-items: center;}
