@@ -17,7 +17,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 <body>
@@ -25,33 +36,10 @@
         <section class="header">
             <div class="container">
                 <div class="d-flex justify-btwn align-center wrapper">
-                    <a href="/"><img src="./images/logo.png" alt="Logo Tropico" class="logo first-col"></a>
-                    <ul class="d-flex second-col align-center desktop">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Productos</a></li>
-                        <li><a href="">Quienes somos</a></li>
-                        <li><button>Contactanos</button></li>
-                    </ul>
-                    <div class="d-flex third-col desktop">
-                        <div class="d-flex">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" placeholder="Buscar">
-                        </div>
-                        <div class="icons">
-                            <i class="fa-regular fa-user"></i>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <div class="mobile">
-                    <div class="burgermenu">
-                        <ul class="second-col align-center">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Productos</a></li>
-                            <li><a href="">Quienes somos</a></li>
-                            <li><button>Contactanos</button></li>
-                            <li class="d-flex">               
+                    <div class="d-flex justify-btwn align-center logo-search">
+                        <a href="/"><img src="./images/logo.png" alt="Logo Tropico" class="logo first-col"></a>
+                        <div class="mobile">
+                            <li class="d-flex search">               
                                 <div class="d-flex third-col">
                                     <div class="d-flex">
                                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -59,11 +47,49 @@
                                     </div>
                                 <div class="icons">
                                     <i class="fa-regular fa-user"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <i class="fa-solid fa-cart-shopping"><span class="amount">1</span></i>
+                                        
+
                                 </div>
             
-                            </div>
+                                </div>
                             </li>
+                        </div>
+                    </div>
+                    <ul class="d-flex second-col align-center desktop">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Productos</a></li>
+                        <li><a href="">Quienes somos</a></li>
+                        <li><button>Contactanos</button></li>
+                    </ul>
+                    <div>
+                        <li class="d-flex search desktop">               
+                            <div class="d-flex third-col">
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" placeholder="Buscar">
+                                </div>
+                            <div class="icons">
+                                <i class="fa-regular fa-user"></i>
+                                <i class="fa-solid fa-cart-shopping"><span class="amount">1</span></i>
+                                    
+
+                            </div>
+        
+                            </div>
+                        </li>
+                    </div>
+
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="mobile">
+                    
+                    <div class="burgermenu">
+                        <ul class="second-col align-center">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Productos</a></li>
+                            <li><a href="">Quienes somos</a></li>
+                            <li><button class="fullwidth">Contactanos</button></li>
                         </ul>
         
                     </div>
@@ -85,6 +111,7 @@
             </div>
         </section>
         <section class="cards">
+            <img class="misc" src="./images/misc.png" alt="">
             <div class="container">
                 <div class="title d-flex">
                     <div class="flowers1"><img src="./images/flores.png" alt="Flores"></div> 
@@ -92,6 +119,7 @@
                         en granos o molido</h2>
                    <div  class="flowers2"><img src="./images/flores.png" alt="Flores"></div> 
                 </div>
+                
                 <div class="carousel">
                     <div class="item">
                         <div class="card">
@@ -160,7 +188,7 @@
             <div class="wrapper">
                 <div class="container d-flex">
                     <div class="texts">
-                        <h2>VARIEDADES UNICAS, AUTENTICOS SABORES</h2>
+                        <h2>VARIEDADES ÚNICAS, AUTENTICOS SABORES</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                     </div>
                     <img src="./images/vectorbanner2.png" alt="Banner Flores">
@@ -197,7 +225,10 @@
                             </div>
                         </div>
                     </div>
+                    <img class="misc2" src="./images/misc2.png" alt="">
+
             </div>
+            
         </section>
         <footer>
             <section class="main-footer">
@@ -206,12 +237,12 @@
                         <img src="./images/footer-logo.png" alt="Logo Tropico">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada nibh vitae tortor dictum accumsan lorem ipsum. 
                             dolor sit am lorem ipsum dolor sit am. </p>
-                        <p><a href=""><i class="fa-brands fa-instagram"></i></a><a href=""><i class="fa-brands fa-facebook"></i><a href=""><i class="fa-brands fa-tiktok"></i></a></p>
+                        <p><a href="https://instagram.com/tropicotostadores"><i class="fa-brands fa-instagram"></i></a><a href="https://facebook.com/profile.php?id=100095238574883"><i class="fa-brands fa-facebook"></i><a href="https://tiktok.com/@tropicotostadores"><i class="fa-brands fa-tiktok"></i></a></p>
                     </div>
                     <div class="lists d-flex">
                         <div class="col">
                             <ul class="d-flex">
-                                <h5>NAVEGACION</h5>
+                                <h5>NAVEGACIÓN</h5>
                                 <div class="tiny-border"></div>
                                 <li><a href="">Inicio</a></li>
                                 <li><a href="">Productos</a></li>
@@ -221,19 +252,19 @@
                         </div>
                         <div class="col">
                             <ul class="d-flex">
-                                <h5>POLITICA</h5>
+                                <h5>POLÍTICA</h5>
                                 <div class="tiny-border"></div>
-                                <li class="indent"><a href="">-Politica de envios y devoluciones</a></li>
-                                <li><a href="">-Legales</a></li>
+                                <li class="indent"><a href="">Politica de envios y devoluciones</a></li>
+                                <li><a href="">Legales</a></li>
                             </ul>
                         </div>
                         <div class="col">
                             <ul class="d-flex">
                                 <h5>CONTACTO</h5>
                                 <div class="tiny-border"></div>
-                                <li class="indent"><i class="fa-regular fa-map"></i> Aguirre 128 Cap. Fed. - Buenos Aires - Argentina</li>
-                                <li><a href="tel:11238422289"><i class="fa-solid fa-tty"></i> 11238422289</a></li>
-                                <li><a href="mailto:maria@cornetashop.com"><i class="fa-solid fa-envelope-open-text"></i> maria@cornetashop.com</a></li>
+                                <li class="indent d-flex"><i class="fa-regular fa-map"></i> Aguirre 128 Cap. Fed. - Buenos Aires - Argentina</li>
+                                <li class="d-flex"><a href="tel:11238422289"><i class="fa-solid fa-tty"></i> 11238422289</a></li>
+                                <li class="d-flex"><a href="mailto:maria@cornetashop.com"><i class="fa-solid fa-envelope-open-text"></i> maria@cornetashop.com</a></li>
                                 
                             </ul>
                         </div>
@@ -242,19 +273,18 @@
             </section>
             <section class="red">
                 <div class="container d-flex  justify-btwn">
-                    <div class="col d-flex">                    
-                        <p>© 2024 Todos los derechos reservados. Powered by 66eCommerce</p>
-                       <a href="https://66eCommerce.com"><img src="./images/66ecommerce.png" alt="Logo 66eCommerce"></a> </div>
-                        <img src="./images/loguito.png" alt="Data Fiscal">
-                    </div>
+                    <p>© 2024 Todos los derechos reservados. Web design Digital Marketing Agency Rednodo</p>
+                       
+      
+                    <img src="./images/loguito.png" alt="Data Fiscal">
                 
                 </div>
             </section>
         </footer>
     </main>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./scripts/burger-menu.js"></script>
 <script src="./scripts/slider.js"></script>
+<script src="./scripts/burgerscroll.js"></script>
 </html>
