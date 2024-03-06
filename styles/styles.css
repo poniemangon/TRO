@@ -397,7 +397,7 @@ margin-bottom: 30px; width: 350px; height: 400px;
 }
 @media (max-width: 1250px){
     .combos {padding-bottom: 100px;}
-    .combos .container .title  {flex-direction: column;  align-items: center;}
+    .combos .container .title  {flex-direction: column;  align-items: center; padding-top: 30px;}
     .combos .container .title h2 {width: 100%; text-align: center;}
     /* .promo-cards {flex-direction: column; row-gap: 80px;} */
     
