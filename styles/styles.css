@@ -387,7 +387,7 @@ margin-bottom: 30px; width: 350px; height: 400px;
 .promo-cards .card .texts p {font-size: 18px; font-weight: 800; color: white; font-family: 'Poppins', sans-serif;}
 
 @media (min-width: 1400px){
-    .combos {max-height: 970px;}
+    .combos {max-height: 1000px;}
     .combos .container .title {padding-bottom: 40px;}
 
 }
