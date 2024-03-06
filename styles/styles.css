@@ -168,13 +168,13 @@ right: 7px;}
 
 @media(max-width: 1250px){
     .banner .container {background-size: 600px; background-position: bottom; padding-top: 50px;}
-    .banner .container .texts-col {width: 100%; text-align: center; align-items: center; padding-bottom: 70vh;}
+    .banner .container .texts-col {width: 100%; text-align: center; align-items: center; padding-bottom: 50vh;}
     .banner .container .texts-col h1 {font-size: 72px;}
 }
 
 @media(max-width: 800px){
     .banner .container {background-size: 500px; background-position: bottom;}
-    .banner .container .texts-col {width: 100%; text-align: center; align-items: center; padding-bottom: 60vh;}
+    .banner .container .texts-col {width: 100%; text-align: center; align-items: center; padding-bottom: 42vh;}
 }
 
 @media(max-width: 600px){
@@ -388,6 +388,7 @@ margin-bottom: 30px; width: 350px; height: 400px;
 
 @media (min-width: 1400px){
     .combos {max-height: 970px;}
+    .combos .container .title {padding-bottom: 40px;}
 
 }
 
