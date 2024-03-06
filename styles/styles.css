@@ -348,7 +348,7 @@ margin-bottom: 20px;
     .misc2{display: none;} 
 }
 
-.combos {background-color: var(--lightblue); padding: 60px 0;}
+.combos {background-color: var(--lightblue); padding: 40px 0 80px 0;}
 .combos .container .title {color: var(--lightgold); margin: auto; margin-bottom: 40px;}
 .combos .container .title h2 {width: 60%; text-align: center; line-height: 1.2;}
 
@@ -374,6 +374,8 @@ margin-bottom: 30px; width: 350px; height: 400px;
 
 .combos .container .promo-cards  .slick-next:hover, .combos .container .promo-cards  .slick-prev:hover {background-color: transparent; color: transparent;}
 
+.slick-dots li button {background-color: transparent!important; color: transparent!important;}
+
 .combos .container .promo-cards .card img {width: 467px;max-width: none;position: relative;top: -73px;left: -74px;}
 
 
@@ -391,6 +393,10 @@ margin-bottom: 30px; width: 350px; height: 400px;
 .promo-cards .card .texts p {font-size: 18px; font-weight: 800; color: white; font-family: 'Poppins', sans-serif;}
 
 
+
+@media (min-width: 1400px){
+    .combos {padding-bottom: 0;}
+}
 
 @media (max-width: 1250px){
     .combos .container .title  {flex-direction: column;  align-items: center;}

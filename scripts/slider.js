@@ -35,6 +35,7 @@ $('.carousel').slick({
 $('.carousel2').slick({
     arrows: false,
     infinite: false,
+    dots: true,
     autoplay: true,
     autoplaySpeed: 8000,
     speed: 300,
