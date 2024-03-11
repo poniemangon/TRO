@@ -71,22 +71,26 @@ button{ transition: ease 0.6s;}
 .header a {font-weight: 500;}
 .header i {cursor: pointer;}
 .header ul {column-gap: 20px;}
+.header a:hover, .header i:hover {color: var(--lowblue);}
 
-
+@media (min-width: 1250px){
+    .header .logo {width: 294px; height: 89px;}
+    .header input {max-width: 100px; color: var(--grey); }
+    }
 .header .third-col {column-gap: 10px; justify-content: center;}
 .header .third-col div.d-flex {border-bottom: 1px solid var(--grey);  }
 .header .third-col div.d-flex .fa-magnifying-glass { color: var(--grey); position: relative; top: 3px; padding-right: 5px;}
-.header input {background-color: transparent; border: none; max-width: 100px; color: var(--grey); }
 
+.header input {background-color: transparent; border: none;  color: var(--grey); }
 .header .third-col .icons i {font-size: 20px; position: relative; top: 5px;}
 
 
-.header input::placeholder {font-family: 'Poppins ', sans-serif; font-size: 18px; font-weight: 500; letter-spacing: 1.5px; }
+.header input::placeholder {color: var(--grey); }
 .header input:focus {outline: none; }
 
 button {color: var(--white); border-radius: 15px; border: none; background-color: var(--lightblue); padding: 10px 18px; line-height: 1;}
 
-.header button { border-radius: 20px; padding: 8px 18px;}
+.header button { border-radius: 20px; padding: 8px 18px; padding-bottom: 10px;}
 
 .fa-solid.fa-bars {display: none;}
 
@@ -102,18 +106,29 @@ button {color: var(--white); border-radius: 15px; border: none; background-color
     .header {padding: 25px 0;}
     img.logo {max-width: 240px;}
     .mobile {display: block;}
-    .burger-icons {display: flex; column-gap: 5px;}
+    .burger-icons {display: flex; column-gap: 7px;}
     .desktop {display: none;}
    
-    .burger-icons i {line-height: 1; font-size: 25px;}
-    .fa-solid.fa-bars {display: block; font-size: 35px; color: var(--darkred); line-height: 1;}
-    .burgermenu {padding-top: 20px;}
-    .burgermenu ul {display: flex; flex-direction: column; row-gap: 20px; align-items: center; text-align: center;}
-    .burgermenu ul li {border-bottom: 1px solid var(--grey); width: 100%; padding-bottom: 20px; margin: auto;}
+    .burger-icons i {line-height: 1; font-size: 22px; letter-spacing: 2px;}
+    .fa-solid.fa-bars {display: block; font-size: 30px; color: var(--darkred); line-height: 1;}
+
+    .burgermenu ul {display: flex; flex-direction: column; align-items: center; text-align: center;}
+    .burgermenu li:hover {background-color: var(--lightblue); }
+    .burgermenu li:hover a {color: white; transition: 0s;}
+
+
+    
+    .burgermenu .nohover:hover {background-color: transparent; }
+
+
+    
+    .burgermenu ul li {border-bottom: 1px solid var(--grey); width: 100%; padding: 20px 0; margin: auto;}
     .burgermenu ul li.d-flex {justify-content: center; border: none;}
     .logo-search {width: 100%;}
-    header input {padding-bottom: 20px;}
+    header input { width: 100%; max-width: 100%;}
 }
+
+.fa-solid.fa-bars:hover {display: block; font-size: 30px; color: var(--darkred); line-height: 1;}
 
 @media(max-width: 500px) {
     /* .logo-search {flex-direction: column; row-gap: 40px;} */
@@ -140,7 +155,7 @@ right: 7px;}
 
 .banner  {background-color:  var(--lightblue); padding-top: 160px;}
 
-.banner button {letter-spacing: 1.5px;}
+.banner button {letter-spacing: 1.5px; padding-bottom: 12px;}
 
 @media(max-width: 1250px){
     .banner {padding-top: 180px;}
@@ -190,6 +205,9 @@ right: 7px;}
 
 /* banner */
 
+
+
+
 /* cards */
 
 .cards .carousel .slick-prev:before{ font-family: 'FontAwesome'; content:"\f053" ; color: var(--grey); color: var(--darkred); }
@@ -202,9 +220,7 @@ right: 7px;}
 
 .cards .misc {position: absolute; left: 50px; top: 1400px; width: 90px;}
 
-@media (max-width: 1250px){
-    .cards .misc {display: none;}
-}
+
 
 .cards {background-color: var(--pink); }
 
@@ -220,10 +236,10 @@ right: 7px;}
     .cards .title {flex-direction: column; align-items: center;}
     .cards .title .flowers1 {padding-bottom: 20px;}
     .cards .title .flowers2 {padding-top: 20px;}
-    .cards .title h2 {font-size: 38px;}
+
 }
 
-@media (max-width: 400px) {
+@media (max-width: 650px) {
     .cards .title h2 {font-size: 38px;}
     .cards .title img {height: 40px;}
 }
@@ -239,6 +255,7 @@ padding: 30px 20px; padding-bottom: 5px ;border-radius: 110px 110px 0 0; border:
 margin-bottom: 20px;
 }
 
+
 .cards .card {padding: 0 5%;  margin: auto;}
 
 @media (max-width: 980px){
@@ -252,6 +269,13 @@ margin-bottom: 20px;
     row-gap: 10px;
     align-items: center;
     text-align: center;
+}
+
+
+@media (max-width: 1250px){
+    .cards .misc {display: none;}
+    .cards .card .background-radius {margin-bottom: 8px;}
+    .cards .texts {row-gap: 8px;}
 }
 
 .cards .card .texts h5 {font-size: 20px; font-weight: 300; font-family: "Poppins", sans-serif;}
@@ -277,7 +301,7 @@ margin-bottom: 20px;
     radial-gradient(43.5px at 50% -31.5px,#0000 99%,#000 101%) 50% 30px/120px 100% repeat-x;
   -webkit-mask: var(--mask);
           mask: var(--mask);
-            background-color: var(--lightblue);
+            background-color: var(--lowblue);
             height: 100px;
             width: 100%;
             position: relative;
@@ -350,11 +374,11 @@ margin-bottom: 20px;
 }
 
 .combos {background-color: var(--lightblue); }
-.combos .container .title {color: var(--lightgold); margin: auto; padding-top: 70px;}
+.combos .container .title {color: var(--lightgold); margin: auto; padding-top: 70px;padding-bottom:  0px;}
 .combos .container .title h2 {width: 60%; text-align: center; line-height: 1.2;}
 
 .combos .container .promo-cards {margin-top: 60px; }
-.combos .container .promo-cards button {border: none; background-color: white; color: black; font-size: 16px;}
+.combos .container .promo-cards button.add {border: none; background-color: white; color: black; font-size: 16px; padding-bottom: 13px;}
 .combos .container .promo-cards .carousel2 {margin: auto; }
 .combos .container .promo-cards .card {margin: auto;}
 .combos .container .promo-cards .card .background-radius {margin: auto;
@@ -384,20 +408,20 @@ margin-bottom: 30px; width: 350px; height: 400px;
 
 
 .promo-cards .card .texts h4{font-size: 25px; font-weight: 300; font-family: 'MuseoModerno', sans-serif; color: white;}
-.promo-cards .card .texts p {font-size: 18px; font-weight: 800; color: white; font-family: 'Poppins', sans-serif;}
+.promo-cards .card .texts p {font-size: 18px; font-weight: 500; color: white; }
 
 @media (min-width: 1400px){
     .combos {max-height: 1000px;}
-    .combos .container .title {padding-bottom: 40px;}
+
 
 }
 
 @media (max-width: 1400px){
-    .combos {padding-bottom: 0; padding-bottom: 100px;}
+    .combos {padding-bottom: 0; padding-bottom: 130px;}
 
 }
 @media (max-width: 1250px){
-    .combos {padding-bottom: 100px;}
+
     .combos .container .title  {flex-direction: column;  align-items: center; padding-top: 30px;}
     .combos .container .title h2 {width: 100%; text-align: center;}
     /* .promo-cards {flex-direction: column; row-gap: 80px;} */
@@ -405,7 +429,7 @@ margin-bottom: 30px; width: 350px; height: 400px;
 }
 
 @media (max-width: 650px){
-    .combos {padding-bottom: 100px;}
+
     .combos .container .promo-cards {margin-top: 0;}
     .combos .container .title h2 {font-size: 36px;}
     .combos .container .title img {height: 98px;}
@@ -431,16 +455,17 @@ margin-bottom: 30px; width: 350px; height: 400px;
 @media (max-width: 400px){
     .combos .container .title h2 {font-size: 32px;}
     .combos .container .title img {height: 98px;}
-    .combos .container .promo-cards .card {width: auto; }
+    .combos .container .promo-cards .card {width: 100%; margin: auto;  }
     .combos .container .promo-cards .card img {scale: 0.5}
     .combos .container .promo-cards .card .background-radius {
     padding: 21px 20px;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     border-radius: 79px 0 0 0;
     border: 1px solid black;
     margin-bottom: 30px;
     width: 150px;
     height: 226px;
+
 }
     .combos .container .promo-cards .card img {
         max-width: none;
@@ -450,15 +475,42 @@ margin-bottom: 30px; width: 350px; height: 400px;
     }
         }
 
+
+.combos .container .carousel2 .slick-prev:before{ font-family: 'FontAwesome'; content:"\f053" ; color: var(--darkred); background-color: transparent; }
+
+.combos .container .carousel2 .slick-next:before{ font-family: 'FontAwesome'; content:"\f054" ; color: var(--darkred); background-color: transparent; }
+/* green */
+
+section.green {background-color: #3d7223; padding: 50px 0;}
+
+section.green .container {justify-content: space-between; margin: auto; column-gap: 40px; }
+
+section.green .container .item {align-items: center; column-gap: 20px; max-width: 360px; }
+section.green .container .third {max-width: 420px;}
+section.green .container .item h4 {font-size: 16px; font-family: 'Poppins', sans-serif; color: white;}
+section.green .container .item p {font-size: 16px; font-family: 'Poppins', sans-serif; color: white; font-weight: 400;}
+section.green .container .item i {font-size: 70px; color: white;}
+@media (max-width: 1380px){
+    section.green .container {flex-direction: column; row-gap: 50px;  align-items: center;}
+
+}
+
 /* footer */
 
-footer ul {flex-direction: column; row-gap: 10px;}
+
+footer p {font-family: 'Open Sans', sans-serif;}
+
+footer p.line1 {line-height: 0.5; padding-bottom: 10px;}
+
+footer ul {flex-direction: column; row-gap: 10px; margin: auto; }
+
+footer .mid-col {max-width: 150px;}
 
 footer .main-footer {background-color: black; color: #eeeeee; padding: 50px 0;}
 
 footer .main-footer .container {justify-content: space-between; column-gap: 40px;}
 
-footer .main-footer .container .lists {column-gap: 50px; padding-top: 20px;}
+footer .main-footer .container .lists { padding-top: 20px; justify-content: space-between; width: 60%;}
 
 footer .tiny-border {border-bottom: 1px solid white; width: 35px; margin-bottom: 10px;}
 
@@ -466,6 +518,8 @@ footer .main-footer .fa-map {height: 100%;}
 
 .indent {max-width: 208px;}
 footer p, footer li, footer a {font-size: 16px; font-weight: 400; }
+
+footer li {width: auto;}
 
 footer .logo {width: 40%; line-height: 1.5;}
 
@@ -477,11 +531,15 @@ footer .fa-map {position: relative;
 
 footer h5 {letter-spacing: 3px;}
 
+
+
+
 footer .logo i {padding-right: 10px;}
 
 footer .col i {padding-right: 6px; color: #818385;}
 
 @media (max-width: 1250px){
+    footer .mid-col {max-width: none;}
     footer .main-footer .container, footer .main-footer .container .lists, footer img, footer div {flex-direction: column; margin: auto; text-align: center;}
     footer .logo {margin: auto; width: 100%;}
     .indent {max-width: none;}

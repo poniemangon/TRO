@@ -33,7 +33,7 @@ $('.carousel').slick({
 });
 
 $('.carousel2').slick({
-    arrows: false,
+    arrows: true,
     infinite: false,
     autoplay: true,
     autoplaySpeed: 8000,
@@ -46,7 +46,7 @@ $('.carousel2').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             infinite: true,
-            dots: true,
+            dots: false,
         }
     },]
   });
