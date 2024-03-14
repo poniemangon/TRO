@@ -418,7 +418,7 @@ margin-bottom: 30px; width: 350px; height: 400px;
 
 
 
-.promo-cards .item .card .texts h4{font-size: 25px; font-weight: 400; font-family: 'MuseoModerno', sans-serif; color: white;}
+.promo-cards .item .card .texts h4{font-size: 25px; font-weight: 300; font-family: 'MuseoModerno', sans-serif; color: white;}
 .promo-cards .item .card .texts p {font-size: 18px; font-weight: 400; color: white; }
 
 @media (min-width: 1400px){
