@@ -788,3 +788,44 @@ margin-bottom: 20px;
 .product-cards .title {padding-top: 0;}
 
 /* PRODUCT PAGE */
+
+
+/* FORM COMMON STYLES */
+
+/* FORM COMMON STYLES */
+
+
+
+
+/* SIGN UP PAGE */
+.sign-up-section {padding-top: 159px; position: relative; background-color: var(--pink); }
+.sign-up-section .wrapper {row-gap: 0; column-gap: 20px; }
+.sign-up-section .parrot-bg  {width: 50%;}
+.sign-up-section .parrot-bg .parrot-over {position: absolute; height: 60%; left: 11%; top: 34%;}
+.sign-up-section .form {width: calc(40% - 25px); max-width: 600px; }
+.sign-up-section .container {margin: 0; flex-direction: column;  height: 100%; ;justify-content: center; width: 100%; row-gap: 30px; }
+.sign-up-section .container h2 {font-size: 60px; color: var(--lightred); line-height: 0.9;}
+.sign-up-section .container form {width: 100%; row-gap: 30px; flex-direction: column;}
+
+/* form text styles */
+.sign-up-section .form .inputs {flex-direction: column; row-gap: 10px;}
+.sign-up-section .form input { color: black; border: none;  padding: 10px 15px; height: 17px; background-color: #fac7cc;}
+.sign-up-section .form h5 {font-weight: 600; color: var(--lightred);}
+.sign-up-section .form h5 span {font-weight: 800; font-size: 15px; color: var(--lightred);}
+.sign-up-section .form label {color: black; font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 400; }
+.sign-up-section .form button {background-color: var(--lightred);}
+
+/* form text styles */
+
+.sign-up-section .parrot-bg-mobile {display: none;}
+
+@media (max-width: 1250px){
+    .sign-up-section .parrot-bg {display: none;}
+    .sign-up-section .parrot-bg-mobile {display: block; position: relative; overflow: hidden;}
+    .sign-up-section .parrot-bg-mobile .parrot-over {position: absolute; height: 90%; left: 33%; top: 37%;}
+    .sign-up-section .form {width: 100%; max-width: none;}
+    .sign-up-section .container {width: 80%; margin: auto; align-items: center; padding: 60px 0;}
+    .sign-up-section .container h2 {text-align: center;}
+}
+
+/* SIGN UP PAGE */

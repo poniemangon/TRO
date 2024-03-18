@@ -31,48 +31,48 @@ $('.carousel').slick({
         }
     }]
   });
-  
-  $('.carousel2').slick({
-      arrows: true,
-      infinite: false,
-      autoplay: true,
-      autoplaySpeed: 8000,
-      speed: 300,
-      slidesToShow: 2,
-      slidesToScroll: 2,
-      responsive: [{
-          breakpoint: 1250,
-          settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: false,
-          }
-      },]
-    });
-  
-    $('.carousel-mobile').slick({
-      arrows: true,
-      infinite: false,
-      autoplay: true,
-      autoplaySpeed: 8000,
-      speed: 300,
-      slidesToShow: 1,
-      slidesToScroll: 2,
-      responsive: [{
-          breakpoint: 1250,
-          settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: false,
-          }
-      },]
-    });
 
-    $(document).ready(function() {
-        $('.thumbnail').click(function() {
-            var newSrc = $(this).attr('src');
-            $('.main-img').attr('src', newSrc);
-        });
-      });
+$('.carousel2').slick({
+    arrows: true,
+    infinite: false,
+    autoplay: true,
+    autoplaySpeed: 8000,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    responsive: [{
+        breakpoint: 1250,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+        }
+    },]
+});
+  
+$('.carousel-mobile').slick({
+    arrows: true,
+    infinite: false,
+    autoplay: true,
+    autoplaySpeed: 8000,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 2,
+    responsive: [{
+        breakpoint: 1250,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+        }
+    },]
+});
+
+$(document).ready(function() {
+    $('.thumbnail').click(function() {
+        var newSrc = $(this).attr('src');
+        $('.main-img').attr('src', newSrc);
+    });
+    });
