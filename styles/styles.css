@@ -68,7 +68,7 @@ button{ transition: ease 0.6s;}
 
 /* header */
 
-.header {background-color: var(--lightyellow); padding: 35px 0; position: fixed; width: 100%; box-shadow: 0px 1px 5px rgb(230, 230, 230); z-index: 2; }
+.header {background-color: var(--lightyellow); padding: 35px 0; position: fixed; width: 100%; box-shadow: 0px 1px 5px rgb(230, 230, 230); z-index: 3; }
 .header a {font-weight: 500;}
 .header i {cursor: pointer;}
 .header ul {column-gap: 20px;}
@@ -514,6 +514,7 @@ section.green .container .item i {font-size: 70px; color: white;}
 
 /* footer */
 
+footer {position: relative; z-index: 1;}
 
 footer p {font-family: 'Open Sans', sans-serif;}
 
@@ -798,16 +799,17 @@ margin-bottom: 20px;
 
 
 /* LOGIN PAGE */
-.login-section {padding-top: 159px; position: relative;background-image: url(../images/flores-bg-blue.png); background-repeat: no-repeat; background-size: cover; background-color: var(--lightblue); }
-.login-section .wrapper {row-gap: 0;  }
-.login-section .wrapper .column-one {width: 47%;}
-.login-section .wrapper .column-two {background-color: transparent; width: 53%;}
-.login-section .parrot-bg  {  border-bottom-right-radius: 90px; height: 100%;}
-.login-section .parrot-bg .parrot-over {position: absolute; height: 60%; left: 11%; top: 34%;}
-.login-section .form {width: 100%;  background-color: var(--pink); }
+.login-section {padding-top: 159px; position: relative; background-size: cover; background-color: var(--pink); }
+.login-section .wrapper {row-gap: 0; }
+.login-section .wrapper .column-one {width: 47%; background-color: var(--pink);}
+.login-section .wrapper .column-two {background-color: transparent; width: 53%; background-color: var(--lightblue); position: relative; }
+.login-section .parrot-bg  {  border-bottom-right-radius: 90px; height: 100%; background-color: var(--lightblue);}
+.login-section .parrot-bg .parrot-over {position: absolute; height: 60%; left: 11%; top: 34%; z-index: 2;}
+.login-section .wrapper .column-two .form .flowers {width: 100vw; height: 82vh; position: absolute; z-index: 1; bottom: 0; right: 90%;}
+.login-section .form {width: 100%;  background-color: var(--pink); z-index: 1;}
 
 
-.login-section .container {margin: 0; flex-direction: column;  height: 100%; ;justify-content: center; width: 80%; max-width: 600px; row-gap: 30px; padding: 15% 0px 15% 100px; box-sizing: border-box;}
+.login-section .container {margin: 0; flex-direction: column;  height: 100%; ;justify-content: center; width: 80%; max-width: 600px; row-gap: 30px; padding: 15% 0px 15% 100px; box-sizing: border-box; background-color: var(--pink); border-top-left-radius: 90px; position: relative; z-index: 2;}
 
 .login-section .container h2 {font-size: 60px; color: var(--lightred); line-height: 0.9;}
 .login-section .container form {width: 100%; row-gap: 30px; flex-direction: column;}
@@ -868,7 +870,7 @@ margin-bottom: 20px;
 .contact-form-section .container .contact-form .second-col  form label {color: white; padding-bottom: 5px;}
 .contact-form-section .container .contact-form .second-col form input {border-bottom-right-radius: 15px; outline: none; border: none;  height: 35px; width: 100%; background-color: var(--darkorange); padding-left: 5px; color: white; }
 .contact-form-section .container .contact-form .second-col form textarea {border-bottom-right-radius: 10px; outline: none; border: none;  width: 100%;  background-color: var(--darkorange); padding-left: 5px; color: white; }
-.contact-form-section .container .contact-form .second-col form .input-block {display: flex; flex-direction: column; width: 48%; }
+.contact-form-section .container .contact-form .second-col form .input-block {display: flex; flex-direction: column; width: 47%; }
 .contact-form-section .container .contact-form .second-col form .area-block {display: flex; flex-direction: column; width: 100%; max-height: 150px;}
 .contact-form-section .container .contact-form .second-col form .send img {padding-bottom: 20px;}
 
