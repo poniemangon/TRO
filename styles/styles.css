@@ -844,8 +844,8 @@ margin-bottom: 20px;
 .contact-form-section .title h1 {font-size: 60px; line-height: 1;}
 .contact-form-section .title img {align-self: center;}
 .contact-form-section .title .headings {flex-direction: column;  color: white; text-align: center; gap: 10px; width: 50%;}
-.contact-form-section .contact-form .first-col {width: 34%;}
-.contact-form-section .contact-form .second-col {width: 66%;}
+.contact-form-section .contact-form .first-col {width: 40%;}
+.contact-form-section .contact-form .second-col {width: 60%;}
 
 
 
@@ -854,11 +854,13 @@ margin-bottom: 20px;
 .contact-form-section .container .contact-form .first-col {background-color: #dc9098; display: flex; align-items: center; flex-direction: column; overflow: hidden; border-bottom-right-radius: 50px;}
 .contact-form-section .container .contact-form .first-col .vector-top {position: relative; right: 40%; padding: 16px 0;}
 .contact-form-section .container .contact-form .first-col .vector {position: relative; top: 40px; left: 80px;}
-.contact-form-section .container .contact-form .first-col ul.d-flex {flex-direction: column; row-gap: 40px;  height: 100%; }
+.contact-form-section .container .contact-form .first-col ul.d-flex {flex-direction: column; row-gap: 30px;  height: 100%; width: 80%; }
 .contact-form-section .container .contact-form .first-col ul i {color: #dc9098; background-color: white; border-radius: 50px; padding: 7px; line-height: 1; margin-right: 10px;}
 .contact-form-section .container .contact-form .first-col ul i.padded {padding: 7px 9px;}
 .contact-form-section .container .contact-form .first-col ul li {color: white;}
-.contact-form-section .container .contact-form .second-col {padding: 60px 0; box-sizing: border-box; justify-content: center; display: flex; position: relative;}
+.contact-form-section .container .contact-form .second-col {padding: 75px 0; box-sizing: border-box; justify-content: center; display: flex; position: relative;}
+
+.poppins-light {font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 300;}
 
 /* contact page inputs */
 
@@ -887,6 +889,7 @@ margin-bottom: 20px;
     .contact-form-section .title h3 {max-width: 480px; margin: auto;}
     .contact-form-section .container .contact-form {flex-direction: column; border-radius: 0; }
     .contact-form-section .container .contact-form .first-col {width: 100%; border-radius: 0%; padding: 40px 0;}
+    .contact-form-section .container .contact-form .first-col ul {width: 100%; }
     .contact-form-section .container .contact-form .first-col .vector-top, .contact-form-section .container .contact-form .first-col .vector {display: none;}
     .contact-form-section .container .contact-form .second-col {width: 100%; box-sizing: content-box;}
     .contact-form-section .container .contact-form .second-col form {max-height: none;}
