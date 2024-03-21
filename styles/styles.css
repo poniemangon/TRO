@@ -580,14 +580,18 @@ footer .red .col img {height: 20px; align-items: center;}
 
 /* breadcrumb */
 
-.breadcrumb { padding: 20px 0; padding-top: 140px; width: 100%;}
+.breadcrumb {  padding-top: 160px ;width: 100%;}
+
+.breadcrumb .container {padding: 30px 0!important;}
 
 
 @media (max-width: 1250px){
-    .breadcrumb { padding-top: 167px;}
+    .breadcrumb { padding-top: 180px;}
 }
 
 .dark-blue {background-color: #318a90;}
+
+.pink {background-color: var(--pink);}
 
 .breadcrumb h5 {font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 800; color: white;}
 
@@ -695,6 +699,8 @@ margin-bottom: 20px;
 
 .product-section {background-color: var(--lightblue); }
 
+.product-section .breadcrumb {background-color: var(--lowblue);}
+
 .product-section .container {padding: 40px 0;  column-gap: 20px;  justify-content: space-between; row-gap: 40px; position: relative;}
 
 
@@ -799,17 +805,20 @@ margin-bottom: 20px;
 
 
 /* LOGIN PAGE */
+
+
+  
+
 .login-section {padding-top: 159px; position: relative; background-size: cover; background-color: var(--pink); }
 .login-section .wrapper {row-gap: 0; }
 .login-section .wrapper .column-one {width: 47%; background-color: var(--pink);}
 .login-section .wrapper .column-two {background-color: transparent; width: 53%; background-color: var(--lightblue); position: relative; }
 .login-section .parrot-bg  {  border-bottom-right-radius: 90px; height: 100%; background-color: var(--lightblue);}
-.login-section .parrot-bg .parrot-over {position: absolute; height: 60%; left: 11%; top: 34%; z-index: 2;}
-.login-section .wrapper .column-two .form .flowers {width: 100vw; height: 82vh; position: absolute; z-index: 1; bottom: 0; right: 90%;}
+.login-section .parrot-bg .parrot-over {position: relative; height: 60%; left: 11%; top: 34%; z-index: 2;}
 .login-section .form {width: 100%;  background-color: var(--pink); z-index: 1;}
 
 
-.login-section .container {margin: 0; flex-direction: column;  height: 100%; ;justify-content: center; width: 80%; max-width: 600px; row-gap: 30px; padding: 15% 0px 15% 100px; box-sizing: border-box; background-color: var(--pink); border-top-left-radius: 90px; position: relative; z-index: 2;}
+.login-section .container {margin: 0; flex-direction: column;  height: 100%; ;justify-content: center; width: 80%; max-width: 600px; row-gap: 30px; padding: 15% 0px 15% 100px; box-sizing: border-box; background-color: var(--pink); border-top-left-radius: 90px;}
 
 .login-section .container h2 {font-size: 60px; color: var(--lightred); line-height: 0.9;}
 .login-section .container form {width: 100%; row-gap: 30px; flex-direction: column;}
@@ -836,11 +845,22 @@ margin-bottom: 20px;
 .login-section .parrot-bg-mobile {display: none;}
 
 
+@media (max-width: 1250px){
+    .login-section .wrapper .column-one {background-image: url(../images/flores-bg-blue.png); width: 100%; background-color: var(--lightblue);}
+    .login-section .parrot-bg  {  border-bottom-right-radius: 0px; height: 100%; background-color: transparent; padding: 40px 0;}
+    .login-section .parrot-bg .parrot-over {position: relative; width: 80%;max-width: 300px; top: 36%; z-index: 2; margin: auto; left: 0;}
+    .login-section .wrapper {flex-direction: column;}
+    .login-section .wrapper .column-two {width: 100%; justify-content: center;}
+    .login-section .wrapper .column-two .form {border-radius: 0;}
+    .login-section .wrapper .column-two .container {max-width: 1200px;  margin: auto; padding: 80px 0;}
+
+}
+
 /* SIGN UP PAGE */
 
 /* CONTACT PAGE */
-.contact-form-section {padding: 40px 0 80px 0; background-color: var(--lightblue);}
-.contact-form-section .breadcrumb {background-color: var(--pink); margin-bottom: 40px;}
+.contact-form-section { background-color: var(--lightblue); padding-bottom: 70px;}
+.contact-form-section .breadcrumb {margin-bottom: 70px;}
 .contact-form-section .breadcrumb h5 {color: var(--red); }
 .contact-form-section .title {display: flex;  justify-content: center; gap: 20px; margin-bottom: 60px; }
 .contact-form-section .title h1 {font-size: 60px; line-height: 1;}
@@ -848,6 +868,7 @@ margin-bottom: 20px;
 .contact-form-section .title .headings {flex-direction: column;  color: white; text-align: center; gap: 10px; width: 50%;}
 .contact-form-section .contact-form .first-col {width: 40%;}
 .contact-form-section .contact-form .second-col {width: 60%;}
+
 
 
 
