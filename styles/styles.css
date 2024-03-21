@@ -386,6 +386,7 @@ margin-bottom: 20px;
 .combos {background-color: var(--lightblue); }
 .combos .container .title {color: var(--lightgold); margin: auto; padding-top: 70px;padding-bottom:  0px;}
 .combos .container .title h2 {width: 60%; text-align: center; line-height: 1.2;}
+.combos .flowers {align-self: center;}
 
 .combos .container .promo-cards {margin-top: 60px; }
 .combos .container .promo-cards button.add {border: none; background-color: white; color: black; font-size: 16px; padding-bottom: 13px;}
@@ -659,7 +660,7 @@ margin-bottom: 20px;
     .cards-category  .card {padding: 0 5%;  margin: auto; max-width: 250px;}
 }
 
-.cards-category  .card img {width: 220px;}
+.cards-category  .card img {width: 220px; margin: auto;}
 
 .cards-category  .texts {
     flex-direction: column;
@@ -835,6 +836,7 @@ margin-bottom: 20px;
 .login-section .form p span {font-weight: 800; color: var(--lightred);}
 .login-section .form label {color: black; font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 400; }
 .login-section .form button {background-color: var(--lightred);}
+.login-section form img {align-self: flex-start;}
 
 /* form text styles */
 
