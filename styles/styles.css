@@ -48,6 +48,8 @@ a,  span, textarea, li, input, button, label {font-family: 'Open Sans', sans-ser
 
 p {font-family: 'Roboto', sans-serif; font-size: 28px; font-weight: 300;  color: var(--secondary);}
 
+p {font-size: 16px; font-family: 'Open Sans', sans-serif; font-weight: 400;}
+
 a { text-decoration: none; transition: all 0.6s; color: var(--secondary); cursor: pointer;}
 
 a:hover{color: var(--grey);}
@@ -351,7 +353,7 @@ margin-bottom: 20px;
 .banner2 .container { margin: auto; text-align: start; flex-direction: row; justify-content: end; }
 
 .banner2 .container h2{color: white; font-size: 50px; width: 25%;line-height: 1.2; padding-left: 40px;}
-.banner2 .container p{color: white; width: 90%; padding-left: 40px;}
+.banner2 .container p{color: white; width: 90%; padding-left: 40px; font-size: 28px; font-family: 'Open Sans', sans-serif; font-weight: 300; line-height: 1.2;}
 
 .banner2image {overflow: hidden;}
 
@@ -673,8 +675,8 @@ margin-bottom: 20px;
     .cards-category  .texts {row-gap: 8px;}
 }
 
-.cards-category  .card .texts h5 {font-size: 20px; font-weight: 300; font-family: "Poppins", sans-serif;}
-.cards-category  .card .texts p {font-size: 18px; font-weight: 500;}
+.cards-category  .card .texts h5 {font-size: 20px; font-weight: 300; font-family: "Poppins", sans-serif; color: white;}
+.cards-category  .card .texts p {font-size: 18px; font-weight: 500; color: white;}
 .cards-category  .card .texts h4 {font-size: 25px; font-weight: 300; font-family: 'MuseoModerno', sans-serif; color: white;}
 
 
@@ -731,15 +733,9 @@ margin-bottom: 20px;
 
 .product-section .container .col-third  h2 {font-family: 'MuseoModerno', sans-serif; font-size: 47px; font-weight: 300; line-height: 1; color: white; width: 75%;}
 
-.product-section .container .col-third  h4 {color: white; font-size: 15px; font-weight: 400; text-transform: uppercase; font-family: 'Open Sans', sans-serif;}
+.product-section .container .col-third  p span{font-size: 15px; color: white; font-weight: 700; text-transform: uppercase;}
 
-.product-section .container .col-third  h4 span {font-weight: 800; font-size: 15px;}
-
-.product-section .container .col-third  h5 {font-size: 13px; color: white; font-weight: 400; }
-
-.product-section .container .col-third  h5 span{font-size: 13px; color: white; font-weight: 700; text-transform: uppercase;}
-
-.product-section .container .col-third  p {font-size: 16px; font-family: 'Open Sans', sans-serif; font-weight: 400; color: white; }
+.product-section .container .col-third  p {font-size: 15px; font-family: 'Open Sans', sans-serif; font-weight: 400; color: white; }
 
 .product-section .container .col-third  button {background-color: var(--lightred); color: white; width: 100%; font-size: 16px; }
 
@@ -835,8 +831,8 @@ margin-bottom: 20px;
 /* form text styles */
 .login-section .form .inputs {flex-direction: column; row-gap: 10px;}
 .login-section .form input { color: black; border: none;  padding: 10px 15px; height: 17px; background-color: #fac7cc;}
-.login-section .form h5 {font-weight: 600; color: var(--lightred);}
-.login-section .form h5 span {font-weight: 800; font-size: 15px; color: var(--lightred);}
+.login-section .form p {font-weight: 600; color: var(--lightred); }
+.login-section .form p span {font-weight: 800; color: var(--lightred);}
 .login-section .form label {color: black; font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 400; }
 .login-section .form button {background-color: var(--lightred);}
 
