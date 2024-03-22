@@ -3,3 +3,17 @@ $(document).ready(function() {
     $(".burgermenu").slideToggle();
     });
   });
+
+  $(document).ready(function() {
+    $(".toggle-box-one").click(function() {
+    $(".hidden-p-one").slideToggle();
+    });
+  });
+
+  $(document).ready(function() {
+    $(".toggle-box-two").click(function() {
+    $(".hidden-p-two").slideToggle();
+    });
+  });
+
+
