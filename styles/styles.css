@@ -957,7 +957,7 @@ margin-bottom: 20px;
 .politica .burger-box {flex-direction: column; background-color: #1e9696; padding: 30px; gap: 30px; border-bottom-right-radius: 40px; margin: auto; width: 100%; box-sizing: border-box;}
 .politica .burger-box div {align-items: center; justify-content: space-between;}
 .politica .burger-box h3 {font-family: 'MuseoModerno', sans-serif; font-size: 30px; color: white; font-weight: 300; line-height: 1;}
-.politica .burger-box div i {color: white; font-size: 30px; transform: rotate(90deg); line-height: 1; transition: 0.6s;}
+.politica .burger-box div i {color: white; font-size: 30px; transform: rotate(90deg); line-height: 1; transition: 0.6s; cursor: pointer;}
 
 .rotated {transform: rotate(270deg)!important; transition: 0.6s;}
 
