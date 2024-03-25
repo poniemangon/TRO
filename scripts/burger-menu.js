@@ -7,14 +7,14 @@ $(document).ready(function() {
   $(document).ready(function() {
     $(".toggle-box-one").click(function() {
     $(".hidden-p-one").slideToggle();
-    $(this).toggleClass("rotated");
+    $(".flip-one").toggleClass("rotated");
     });
   });
 
   $(document).ready(function() {
     $(".toggle-box-two").click(function() {
     $(".hidden-p-two").slideToggle();
-    $(this).toggleClass("rotated");
+    $(".flip-two").toggleClass("rotated");
     });
   });
 

@@ -33,71 +33,70 @@
 </head>
 <body>
     <header>
-    <section class="header">
-        <div class="container">
-            <div class="d-flex justify-btwn align-center wrapper">
-                <div class="d-flex justify-btwn align-center logo-search">
-                    <a href="/"><img src="./images/logo.png" alt="Logo Tropico" class="logo first-col"></a>
-                    <div class="mobile burger-icons align-center">                            
-                       <a href=""><i class="fa-regular fa-user"></i></a> 
-                       <a href=""><i class="fa-solid fa-cart-shopping"><span class="amount">1</span></i></a> 
-                        <i class="fa-solid fa-bars"></i>
-
-                    </div> 
-                </div>
-                <ul class="d-flex second-col align-center desktop">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/category.html">Productos</a></li>
-                    <li><a href="">Quienes somos</a></li>
-                    <li><a href="/contact.html"><button>Contactanos</button></a></li>
-                </ul>
-                
-                <div>
-                    <li class="d-flex search desktop">               
-                        <div class="d-flex third-col align-center">
-                            <div class="d-flex">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                                <input type="text" placeholder="Buscar">
-                                
-                            </div>
-                           <a href="/login.html"><i class="fa-regular fa-user"></i></a> 
+        <section class="header">
+            <div class="container">
+                <div class="d-flex justify-btwn align-center wrapper">
+                    <div class="d-flex justify-btwn align-center logo-search">
+                        <a href="/"><img src="./images/logo.png" alt="Logo Tropico" class="logo first-col"></a>
+                        <div class="mobile burger-icons align-center">                            
+                           <a href=""><i class="fa-regular fa-user"></i></a> 
                            <a href=""><i class="fa-solid fa-cart-shopping"><span class="amount">1</span></i></a> 
+                            <i class="fa-solid fa-bars"></i>
+
+                        </div> 
+                    </div>
+                    <ul class="d-flex second-col align-center desktop">
+                        <li><a href="/">Home</a></li>
+                        <li class="active"><a href="/category.html">Productos</a></li>
+                        <li><a href="/contact.html"><button>Contactanos</button></a></li>
+                    </ul>
+                    
+                    <div>
+                        <li class="d-flex search desktop">               
+                            <div class="d-flex third-col align-center">
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" placeholder="Buscar">
+                                    
+                                </div>
+                               <a href="/login.html"><i class="fa-regular fa-user"></i></a> 
+                               <a href=""><i class="fa-solid fa-cart-shopping"><span class="amount">1</span></i></a> 
+
+        
+                            </div>
+                        </li>
+                        
+                    </div>
+
+
+
+                </div>
+                <div class="mobile">               
+                        <div class="d-flex third-col fullwidth">
+                            <div class="d-flex fullwidth">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" placeholder="Buscar" class="fullwidth">
+                            </div>
 
     
                         </div>
                     </li>
+                </div>
+                <div class="mobile">
                     
-                </div>
-
-
-
-            </div>
-            <div class="mobile">               
-                    <div class="d-flex third-col fullwidth">
-                        <div class="d-flex fullwidth">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" placeholder="Buscar" class="fullwidth">
-                        </div>
-
-
+                    <div class="burgermenu">
+                        <ul class="second-col align-center">
+                            <li><a href="">Home</a></li>
+                            <li class="active"><a href="">Productos</a></li>
+                            <li><a href="/politica.html">Política de envíos</a></li>
+                            <li class="nohover"><a href="/contact.html"><button class="fullwidth">Contactanos</button></a></li>
+                        </ul>
+        
                     </div>
-                </li>
-            </div>
-            <div class="mobile">
-                
-                <div class="burgermenu">
-                    <ul class="second-col align-center">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Productos</a></li>
-                        <li><a href="">Quienes somos</a></li>
-                        <li class="nohover"><a href="/contact.html"><button class="fullwidth">Contactanos</button></a></li>
-                    </ul>
-    
                 </div>
             </div>
-        </div>
-    </section>
-</header>
+        </section>
+    </header>
     <main>
 
       
@@ -108,7 +107,7 @@
 
             <div class="breadcrumb dark-blue">
                 <div class="container">
-                    <h5>Inicio  > Café de especialidad </h5>
+                    <h5><a href="/">Inicio</a>  > Café de especialidad </h5>
                 </div>
             </div>
             <div class="container">
@@ -117,7 +116,13 @@
                     <div class="d-flex selector">
                         <p>Ordenar por: </p>
                         <select name="" id="">
-                            <option value="">Más Vendidos</option>
+                            <option value="price-ascending">Precio: Menor a Mayor</option>
+                            <option value="price-descending">Precio: Mayor a Menor</option>
+                            <option value="alpha-ascending">A - Z</option>
+                            <option value="alpha-descending">Z - A</option>
+                            <option value="created-descending">Más Nuevo al más Viejo</option>
+                            <option value="created-ascending">Más Viejo al más Nuevo</option>
+                            <option value="best-selling" selected="">Más Vendidos</option>
                         </select>
                     </div>
                 </div>
@@ -249,24 +254,24 @@
                     <div class="logo">
                         <img src="./images/footer-logo.png" alt="Logo Tropico">
                         <p>Somos tres amigos en la búsqueda de granos nobles, cultivados entre los trópicos, bajo el sol, sobre la sierra, acariciados por la lluvia, con dedicación, esmero y una historia singular para que puedas compartir, sabores, aromas y grandes momentos. </p>
-                        <p><a href="https://instagram.com/tropicotostadores"><i class="fa-brands fa-instagram"></i></a><a href="https://facebook.com/profile.php?id=100095238574883"><i class="fa-brands fa-facebook"></i><a href="https://tiktok.com/@tropicotostadores"><i class="fa-brands fa-tiktok"></i></a></p>
+                        <p class="d-flex"><a href="https://instagram.com/tropicotostadores" target="_blank"><i class="fa-brands fa-instagram"></i></a><a href="https://facebook.com/profile.php?id=100095238574883" target="_blank"><i class="fa-brands fa-facebook"></i><a href="https://tiktok.com/@tropicotostadores" target="_blank"><i class="fa-brands fa-tiktok"></i></a></p>
                     </div>
                     <div class="lists d-flex">
                         <div class="col">
                             <ul class="d-flex">
                                 <h5>NAVEGACIÓN</h5>
                                 <div class="tiny-border"></div>
-                                <li><a href="">Inicio</a></li>
-                                <li><a href="">Productos</a></li>
+                                <li><a href="/">Inicio</a></li>
+                                <li><a href="/category.html">Productos</a></li>
                                 <li><a href="">Quienes somos</a></li>
-                                <li><a href="">Contacto</a></li>
+                                <li><a href="/contact.html">Contacto</a></li>
                             </ul>
                         </div>
                         <div class="col mid-col">
                             <ul class="d-flex">
                                 <h5>POLÍTICA</h5>
                                 <div class="tiny-border"></div>
-                                <li class="indent"><a href="">Política de envíos y devoluciones</a></li>
+                                <li class="indent"><a href="/politica.html">Política de envíos y devoluciones</a></li>
                                 <li><a href="">Legales</a></li>
                             </ul>
                         </div>
@@ -274,7 +279,7 @@
                             <ul class="d-flex">
                                 <h5>CONTACTO</h5>
                                 <div class="tiny-border"></div>
-                                <li class="indent d-flex"><i class="fa-regular fa-map"></i> Aguirre 128 Cap. Fed. - Buenos Aires - Argentina</li>
+                                <li class="indent"><i class="fa-regular fa-map"></i> Aguirre 128 Cap. Fed. - Buenos Aires - Argentina</li>
                                 <li class="d-flex"><a href="tel:11238422289"><i class="fa-solid fa-tty"></i> 11238422289</a></li>
                                 <li class="d-flex"><a href="mailto:maria@cornetashop.com"><i class="fa-solid fa-envelope-open-text"></i> maria@cornetashop.com</a></li>
                                 
@@ -285,9 +290,9 @@
             </section>
             <section class="red">
                 <div class="container d-flex  justify-btwn">
-                    <a href="https://rednodo.com">
-                        <p>© 2024 Todos los derechos reservados. Web design Digital Marketing Agency Rednodo</p>
-                    </a>
+                   
+                        <p>© 2024 Todos los derechos reservados. <a href="https://rednodo.com" target="_blank"> Web design Digital Marketing Agency Rednodo </a></p>
+                   
 
                        
       
