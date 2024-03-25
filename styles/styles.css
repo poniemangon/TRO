@@ -62,7 +62,7 @@ a:hover{color: var(--grey);}
 
 .justify-btwn {justify-content: space-between;}
 
-button:hover{background-color: black ; color: white!important; transition: ease 0.6s;}
+button:hover{background-color: black!important; color: white!important; transition: 0.6s;}
 button{ transition: ease 0.6s;}
 
 .fullwidth {width: 100%;}
@@ -159,7 +159,8 @@ right: 7px;}
 
 .banner  {background-color:  var(--lightblue); padding-top: 160px;}
 
-.banner button {letter-spacing: 1.5px; padding-bottom: 12px;}
+.banner button {letter-spacing: 1.5px; padding-bottom: 12px; transition: 0.6s;}
+.banner button:hover {background-color: black; transition: 0.6s;}
 
 @media(max-width: 1250px){
     .banner {padding-top: 180px;}
@@ -257,7 +258,8 @@ right: 7px;}
 
 .cards .title h2 {color: var(--lightred); max-width: 500px; text-align: center; line-height: 1.2; padding: 0 20px;}
 
-.cards .item button {border: none; background-color: var(--lightred); color: white; padding-bottom: 15px;}
+.cards .item button {border: none; background-color: var(--lightred); color: white; padding-bottom: 15px; transition: 0.6s;}
+
 /* .cards .container {column-gap: 20px;} */
 
 .cards .card .background-radius {
