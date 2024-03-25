@@ -805,6 +805,12 @@ margin-bottom: 20px;
 
 /* login specific */
 
+.fixed-bg {top: 0px;
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    border-bottom-right-radius: 90px;}
+
 .login-section .user-forms .form input {background-color: #fac7cc;}
 
 
@@ -820,8 +826,9 @@ margin-bottom: 20px;
 
 @media (max-width: 1250px) {
     .sign-up-section .user-forms .form .inputs div {width: 100%;}
-    .sign-up-section .user-forms .column-one {background-image: url(../images/flores-bg.png); background-color: var(--pink);}
+    .sign-up-section .user-forms .column-one {background-image: url(../images/flores-bg.png); background-color: var(--pink); }
     .sign-up-section .vector {display: none;}
+    .fixed-bg {display: none;}
 }
 
 /* SIGN-UP specific */
@@ -835,7 +842,7 @@ margin-bottom: 20px;
 
 .user-forms {padding-top: 159px; position: relative; background-size: cover;  }
 .user-forms  {row-gap: 0; }
-.user-forms .column-one {width: 47%; }
+.user-forms .column-one {width: 47%;position: relative; }
 
 .user-forms .column-two { width: 53%;  position: relative; }
 .user-forms .parrot-bg  {  border-bottom-right-radius: 90px; height: 100%; }
@@ -966,6 +973,7 @@ margin-bottom: 20px;
 @media (max-width: 1250px){
     .politica .burger-box p {color: white; width: 100%; }
 }
+
 
 
 /* POLITICAS */
