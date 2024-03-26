@@ -1024,6 +1024,7 @@ textarea::-webkit-resizer {display: none;}
 
 /* POLITICAS */
 .politica .container {gap: 40px; display: flex; flex-direction: column; padding-bottom: 80px;}
+.politica .container .boxes {gap: 10px; display: flex; flex-direction: column;}
 .politica h2 {text-align: center; margin-top: 80px; line-height: 1;}
 .politica .burger-box {flex-direction: column; background-color: #1e9696; padding: 25px 30px; gap: 30px; border-bottom-right-radius: 40px; margin: auto; width: 100%; box-sizing: border-box;}
 .politica .burger-box div {align-items: center; justify-content: space-between;}
