@@ -28,7 +28,8 @@
       integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    />    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 <body>
@@ -40,7 +41,7 @@
                         <a href="/"><img src="./images/logo.png" alt="Logo Tropico" class="logo first-col"></a>
                         <div class="mobile burger-icons align-center">                            
                            <a href=""><i class="fa-regular fa-user"></i></a> 
-                           <a href=""><i class="fa-solid fa-cart-shopping"><span class="amount">1</span></i></a> 
+                          <i class="fa-solid fa-cart-shopping"><span class="amount">1</span></i>
                             <i class="fa-solid fa-bars"></i>
 
                         </div> 
@@ -61,7 +62,7 @@
                                     
                                 </div>
                                <a href="/login.html"><i class="fa-regular fa-user"></i></a> 
-                               <a href=""><i class="fa-solid fa-cart-shopping"><span class="amount">1</span></i></a> 
+                            <i class="fa-solid fa-cart-shopping"><span class="amount">1</span></i>
 
         
                             </div>
@@ -97,6 +98,24 @@
                 </div>
             </div>
         </section>
+        <section class="cart">
+                <div class="container">
+                    <div class="cart-title d-flex align-center justify-btwn">
+                        <h2>Carrito</h2>
+                        <i class="fa-solid fa-xmark close-cart"></i>
+                    </div>
+                    <div class="content">
+                        <div class="product"></div>
+                    </div>
+                    <div class="totals">
+                        <div class="subtotal d-flex"></div>
+                        <div class="total d-flex"></div>
+                    </div>
+                </div>
+        </section>
+        <div class="overlay">
+            
+        </div>
     </header>
     <main>
         <section class="banner">
@@ -324,4 +343,5 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./scripts/burger-menu.js"></script>
 <script src="./scripts/slider.js"></script>
+
 </html>
