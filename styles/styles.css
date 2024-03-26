@@ -45,7 +45,7 @@ h4 {font-family: 'MuseoModerno', sans-serif; font-size: 25px; font-weight: 300; 
 
 h5 {font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: 700; }
 
-a,  span, textarea, li, input, button, label {font-family: 'Open Sans', sans-serif; font-size: 18px; font-weight: 600;  }
+a,  span, textarea, li, input, button, label {font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 600;  }
 
 /* p {font-family: 'Roboto', sans-serif; font-size: 28px; font-weight: 300;  color: var(--secondary);} */
 
@@ -738,17 +738,17 @@ margin-bottom: 20px;
 
 /* estilos de textos columna 3 */
 
-.product-section .container .col-third .price-cuotas {flex-direction: column; gap: 10px;}
+.product-section .container .col-third .price-cuotas { gap: 10px; align-items: center;}
 
-.product-section .container .col-third  h2.price {font-family: 'MuseoModerno', sans-serif;  font-weight: 700; line-height: 1; color: white;}
+.product-section .container .col-third  h2.price { font-weight: 700; line-height: 1; color: white;}
 
-.product-section .container .col-third  h2 {font-family: 'MuseoModerno', sans-serif; font-size: 47px; font-weight: 300; line-height: 1; color: white; width: 75%;}
+.product-section .container .col-third  h2.title {font-family: 'MuseoModerno', sans-serif;  font-weight: 300; line-height: 1; color: white; width: 75%;}
 
 .product-section .container .col-third  p span{color: white; font-weight: 700; text-transform: uppercase;}
 
-.product-section .container .col-third  p { font-family: 'Open Sans', sans-serif; font-weight: 400; color: white; }
+.product-section .container .col-third  p {color: white; }
 
-.product-section .container .col-third  button {background-color: var(--lightred); color: white; width: 100%; font-size: 16px; padding: 12px 0;}
+.product-section .container .col-third  button {background-color: var(--lightred); color: white; width: 100%; padding: 12px 0;}
 
 .product-section .container .col-third  form {display: flex; flex-direction: column;row-gap: 30px;}
 
@@ -783,6 +783,7 @@ margin-bottom: 20px;
 
 
 @media(max-width: 1250px){
+    .product-section .container .col-third .price-cuotas {flex-direction: column;}
     .product-section .container .col-first {width: 100%; max-width: 550px;}
     .product-section .container .col-third .share {display: flex; padding: 0;}
     .product-section .container .misc {display: none; }
@@ -827,11 +828,11 @@ margin-bottom: 20px;
 /* FORM COMMON STYLES */
 
 
-
-
 /* LOGIN AND SIGN-UP PAGES */
 
 /* login specific */
+
+
 
 .fixed-bg {top: 0px;
     position: absolute;
@@ -839,25 +840,34 @@ margin-bottom: 20px;
     height: 100%;
     border-bottom-right-radius: 90px;}
 
-.login-section .user-forms .form input {background-color: #fac7cc;}
+.login-section .user-forms .form input {background-color: #fac7cc; color: black;}
 
 
 /* login specific */
 
+.login-section .user-forms .form .input-block {width: 100%;}
+
 /* SIGN-UP specific */
 
-.sign-up-section .user-forms .form .inputs {flex-direction: row; flex-wrap: wrap; gap: 30px;}
-.sign-up-section .user-forms .form .inputs div {display: flex; flex-direction: column;  width: calc(50% - 15px); gap: 10px;}
-.sign-up-section .user-forms .form input {background-color: #1ea1a1;}
-.sign-up-section .user-forms .container form {width: 100%; gap: 30px; }
+.sign-up-section .user-forms .form .inputs {flex-direction: row; flex-wrap: wrap; column-gap: 30px; row-gap: 20px;}
+.sign-up-section .user-forms .form .inputs .input-block {width: calc(50% - 15px);}
+.sign-up-section .user-forms .form input {background-color: #1ea1a1; color: white;} 
+.sign-up-section .user-forms .container form {width: 100%; gap: 25px; }
 .sign-up-section .vector {position: absolute; bottom: -12px;right: 15px;}
 
 @media (max-width: 1250px) {
     .sign-up-section .user-forms .form .inputs div {width: 100%;}
+    .sign-up-section .user-forms .form .inputs {flex-wrap: nowrap; flex-direction: column;}
+    .sign-up-section .user-forms .form .inputs .input-block {width: 100%;}
     .sign-up-section .user-forms .column-one { background-color: var(--pink); }
     .sign-up-section .vector {display: none;}
     .fixed-bg {display: none;}
     .user-forms .parrot-bg .parrot-over {display: none;}
+}
+
+
+@media (max-width: 550px){
+
 }
 
 /* SIGN-UP specific */
@@ -867,20 +877,15 @@ margin-bottom: 20px;
 .lightred-c {color: var(--lightred);}
 .white-c {color: white;}
 .black-c {color: black;}
-
-
+.sign-up-already {position: relative; bottom: 10px;}
 .user-forms {padding-top: 145px; position: relative; background-size: cover;  }
 .user-forms  {row-gap: 0; }
 .user-forms .column-one {width: 47%;position: relative; }
-
 .user-forms .column-two { width: 53%;  position: relative; }
 .user-forms .parrot-bg  {  border-bottom-right-radius: 90px; height: 100%; }
-.user-forms .parrot-bg .parrot-over {position: relative; height: 60%; left: 25%; top: 20%; z-index: 2;}
+.user-forms .parrot-bg .parrot-over {position: relative; max-height: 400px; left: 25%; top: 110px; z-index: 2;}
 .user-forms .form {width: 100%;   z-index: 1;}
-
-
-.user-forms .container {margin: 0; flex-direction: column;  height: 100%; ;justify-content: center; width: 80%; max-width: 640px; row-gap: 30px; padding: 15% 0px 15% 100px; box-sizing: border-box;  border-top-left-radius: 90px; position: relative;}
-
+.user-forms .container {margin: 0; flex-direction: column;  height: 100%; ;justify-content: center; width: 80%; max-width: 640px; row-gap: 20px; padding: 100px 0px 100px 100px; box-sizing: border-box;  border-top-left-radius: 90px; position: relative;}
 .user-forms .container h2 {  line-height: 0.9; position: relative;}
 .user-forms .container form {width: 100%; gap: 30px; flex-direction: column; }
 
@@ -894,8 +899,8 @@ margin-bottom: 20px;
 /* background-radius stuff */
 
 /* form text styles */
-.user-forms .form .inputs {flex-direction: column; row-gap: 10px;}
-.user-forms .form input {  border: none;  padding: 10px 15px; height: 17px; border-bottom-right-radius: 10px;}
+.user-forms .form .inputs {flex-direction: column; row-gap: 30px; }
+.user-forms .form input {  border: none;  padding: 10px 15px; height: 17px; border-bottom-right-radius: 10px; outline: none; }
 .user-forms .form p span {font-weight: 800; }
 .user-forms .form button {background-color: var(--lightred); width: 100%; transition: 0.6s;}
 .user-forms form img {align-self: flex-start;}
@@ -919,7 +924,10 @@ margin-bottom: 20px;
 
 }
 
+
 /* END LOGIN AND SIGN-UP */
+
+.input-block {display: flex; flex-direction: column; width: 47%; gap: 10px; }
 
 /* CONTACT PAGE */
 .contact-form-section { background-color: var(--lightblue); padding-bottom: 70px;}
@@ -954,7 +962,10 @@ margin-bottom: 20px;
 .contact-form-section .container .contact-form .second-col form input {border-bottom-right-radius: 15px; outline: none; border: none;  height: 35px; width: 100%; background-color: var(--darkorange); padding-left: 5px; color: white; }
 .contact-form-section .container .contact-form .second-col form textarea {border-bottom-right-radius: 10px; outline: none; border: none;  width: 100%;  background-color: var(--darkorange); padding-left: 5px; color: white; }
 textarea::-webkit-resizer {display: none;}
-.contact-form-section .container .contact-form .second-col form .input-block {display: flex; flex-direction: column; width: 47%; }
+.contact-form-section .container .contact-form .second-col form .input-block { width: 47%; }
+
+
+
 .contact-form-section .container .contact-form .second-col form .area-block {display: flex; flex-direction: column; width: 100%; max-height: 150px;}
 .contact-form-section .container .contact-form .second-col form .send img {padding-bottom: 20px;}
 
