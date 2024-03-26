@@ -852,6 +852,8 @@ margin-bottom: 20px;
 
 /* login specific */
 
+.forgot {font-size: 13px; transition: 0.2s; color: black;}
+.forgot:hover { transition: 0.2s; color: var(--red);}
 
 
 .fixed-bg {top: 0px;
