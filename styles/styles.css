@@ -79,7 +79,7 @@ button.active-btn {background-color: black!important; color: white!important; tr
 .header a:hover, .header i:hover {color: var(--lowblue);}
 
 @media (min-width: 1250px){
-    .header .logo {width: 294px; height: 89px;}
+    .header .logo {width: 250px; }
     .header input {max-width: 100px; color: var(--grey); }
     }
 .header .third-col {column-gap: 10px; justify-content: center; }
@@ -537,7 +537,7 @@ footer .main-footer {background-color: black; color: #eeeeee; padding: 50px 0;}
 
 footer .main-footer .container {justify-content: space-between; column-gap: 40px;}
 
-footer .main-footer .container .lists { padding-top: 20px; justify-content: space-between; width: 60%;}
+footer .main-footer .container .lists { padding-top: 27px; justify-content: space-between; width: 60%;}
 
 footer .tiny-border {border-bottom: 1px solid white; width: 35px; margin-bottom: 10px;}
 
@@ -559,12 +559,14 @@ footer .fa-map {position: relative;
 footer h5 {letter-spacing: 3px;}
 
 
-footer p.d-flex {column-gap: 10px; width: 100%; justify-content: center;}
+footer p.d-flex {column-gap: 10px; width: 100%; }
+
 
 
 footer .col i {padding-right: 6px; color: #818385;}
 
 @media (max-width: 1250px){
+    footer p.d-flex {justify-content: center;}
     footer .mid-col {max-width: none;}
     footer .main-footer .container, footer .main-footer .container .lists, footer img, footer div {flex-direction: column; margin: auto; text-align: center;}
     footer .logo {margin: auto; width: 100%;}
@@ -852,9 +854,10 @@ margin-bottom: 20px;
 
 @media (max-width: 1250px) {
     .sign-up-section .user-forms .form .inputs div {width: 100%;}
-    .sign-up-section .user-forms .column-one {background-image: url(../images/flores-bg.png); background-color: var(--pink); }
+    .sign-up-section .user-forms .column-one { background-color: var(--pink); }
     .sign-up-section .vector {display: none;}
     .fixed-bg {display: none;}
+    .user-forms .parrot-bg .parrot-over {display: none;}
 }
 
 /* SIGN-UP specific */
@@ -866,7 +869,7 @@ margin-bottom: 20px;
 .black-c {color: black;}
 
 
-.user-forms {padding-top: 159px; position: relative; background-size: cover;  }
+.user-forms {padding-top: 145px; position: relative; background-size: cover;  }
 .user-forms  {row-gap: 0; }
 .user-forms .column-one {width: 47%;position: relative; }
 
@@ -901,11 +904,13 @@ margin-bottom: 20px;
 /* form text styles */
 
 .user-forms .parrot-bg-mobile {display: none;}
+.mobile-flowers-bg {display: none;}
 
 
 @media (max-width: 1250px){
-    .user-forms  .column-one {background-image: url(../images/flores-bg-blue.png); width: 100%; background-color: var(--lightblue);}
-    .user-forms .parrot-bg  {  border-bottom-right-radius: 0px; height: 100%; background-color: transparent; padding: 40px 0;}
+    .mobile-flowers-bg {display: block;}
+    .user-forms  .column-one { width: 100%; background-color: var(--lightblue);}
+    .user-forms .parrot-bg  {  border-bottom-right-radius: 0px; height: 100%; background-color: transparent;}
     .user-forms .parrot-bg .parrot-over {position: relative; width: 80%;max-width: 300px; top: 36%; z-index: 2; margin: auto; left: 0;}
     .user-forms  {flex-direction: column;}
     .user-forms  .column-two {width: 100%; justify-content: center;}
