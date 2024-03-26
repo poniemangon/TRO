@@ -609,6 +609,8 @@ footer .red .col img {height: 20px; align-items: center;}
 
 .breadcrumb {  padding-top: 145px ;width: 100%; background-color: #318b91; color: white;}
 
+.breadcrumb h5 {color: white;}
+
 .breadcrumb .container {padding: 20px 0!important;}
 
 
@@ -954,7 +956,6 @@ margin-bottom: 20px;
 /* CONTACT PAGE */
 .contact-form-section { background-color: var(--lightblue); padding-bottom: 70px;}
 .contact-form-section .breadcrumb {margin-bottom: 70px;}
-.contact-form-section .breadcrumb h5, .contact-form-section .breadcrumb a {color: var(--red); }
 .contact-form-section .title {display: flex;  justify-content: center; gap: 20px; margin-bottom: 60px; }
 .contact-form-section .title h1 {font-size: 60px; line-height: 1;}
 .contact-form-section .title img {align-self: center;}
