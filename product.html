@@ -110,7 +110,11 @@
                             <img src="./images/coffee boxes/brasil1.png" alt="">
                             <div class="title-counter d-flex">
                                 <p class="title">Brasil - Catuai rojo natural</p>
-                                <div class="counter d-flex"><h3>-</h3><h3 class="quantity">1</h3><h3>+</h3></div>
+                                <div class="counter d-flex">
+                                    <h3 class="decrement">-</h3>
+                                    <h3 class="quantity">1</h3>
+                                    <h3 class="increment">+</h3>
+                                </div>
                             </div>
                         </div>
                        <div class="column price-column d-flex">
@@ -123,7 +127,7 @@
                             <img src="./images/coffee boxes/colombia1.png" alt="">
                             <div class="title-counter d-flex">
                                 <p class="title">Colombia - Regional Cundiamarca y Excelso Malla 16</p>
-                                <div class="counter d-flex"><h3>-</h3><h3 class="quantity">1</h3><h3>+</h3></div>
+                                <div class="counter d-flex"><h3 class="decrement">-</h3><h3 class="quantity">1</h3><h3 class="increment">+</h3></div>
                             </div>
                         </div>
                        <div class="column price-column d-flex">
@@ -149,40 +153,56 @@
             <div class="modal-payment">
                 <div class="container">
                     <div class="modal-payment-title d-flex align-center justify-btwn">
-                        <h2>Metodos de pago</h2>
+                        <h3 class="active-modal option-mp">Mercadopago</h3>
+                        <h3 class="option-tr">Pagos personalizados</h3>
                         <i class="fa-solid fa-xmark close-modal"></i>
                     </div>
+                    <div class="d-flex option option-one">
+                    <p>Tarjetas de crédito</p>
                     <div class="totals d-flex">
                         <p><span>24</span> CUOTAS DE <span>$1.920,86</span></p>
-                        <p class="smaller">CFT: 0,00% Total: $11.500,00 En 1 pago: $11.500,00</p>
-                    </div>
-                    <div class="d-flex payments">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" alt="Cabal">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png"  alt="American Express">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-patagonia@2x.png"  alt="Banco Patagonia">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/HSBC@2x.png"  alt="HSBC">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/macro@2x.png"  alt="Macro">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/galicia@2x.png"  alt="Banco Galicia">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-santander@2x.png"  alt="Banco Santander">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-santander@2x.png"  alt="Banco Santander">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/macro-selecta@2x.png" alt="Macro - Selecta">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/rebanking@2x.png"  alt="Reba">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/patagonia-singular@2x.png"  alt="Patagonia Singular">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/mastercard@2x.png"  alt="Mastercard">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png"  alt="Tarjeta Cencosud">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/nativa@2x.png"  alt="Nativa Mastercard">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/ICBC@2x.png"  alt="ICBC">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-industrial@2x.png"  alt="Banco Industrial">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-comafi@2x.png"  alt="Banco Comafi">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-nacion@2x.png"  alt="Banco Nacion">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-ciudad@2x.png"  alt="Banco Ciudad">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-santa-cruz@2x.png"  alt="Banco Santa Cruz">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/itau@2x.png"  alt="Itau">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-sanjuan@2x.png" alt="Banco San Juan">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-entre-rios@2x.png" alt="Nuevo Banco de Entre Rios">
-                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-santa-fe@2x.png" alt="Nuevo Banco">
-
+                        <div class="d-flex cuotas">
+                            <p class="smaller">CFT: 0,00% </p>
+                            <p class="smaller">Total: $11.500,00</p>
+                            <p class="smaller">En 1 pago: $11.500,00</p>
                         </div>
+                    </div>
+
+                       <div class="payments">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" alt="Cabal">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png"  alt="American Express">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-patagonia@2x.png"  alt="Banco Patagonia">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/HSBC@2x.png"  alt="HSBC">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/macro@2x.png"  alt="Macro">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/galicia@2x.png"  alt="Banco Galicia">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-santander@2x.png"  alt="Banco Santander">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-santander@2x.png"  alt="Banco Santander">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/macro-selecta@2x.png" alt="Macro - Selecta">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/rebanking@2x.png"  alt="Reba">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/patagonia-singular@2x.png"  alt="Patagonia Singular">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/mastercard@2x.png"  alt="Mastercard">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png"  alt="Tarjeta Cencosud">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/nativa@2x.png"  alt="Nativa Mastercard">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/ICBC@2x.png"  alt="ICBC">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-industrial@2x.png"  alt="Banco Industrial">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-comafi@2x.png"  alt="Banco Comafi">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-nacion@2x.png"  alt="Banco Nacion">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-ciudad@2x.png"  alt="Banco Ciudad">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-santa-cruz@2x.png"  alt="Banco Santa Cruz">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/itau@2x.png"  alt="Itau">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-sanjuan@2x.png" alt="Banco San Juan">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-entre-rios@2x.png" alt="Nuevo Banco de Entre Rios">
+                            <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banco-santa-fe@2x.png" alt="Nuevo Banco">
+                        </div>
+                    </div>
+                    <div class="d-flex payments option option-two">
+                        <p>Transferencia</p>
+                        <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/other@2x.png" alt="">
+                        <div class="d-flex gap10">
+                            <h3 class="d-flex">Total:</h3>
+                            <h3 class="bold">$11.500,00</h3>
+                        </div>
+                        
                     </div>
                     
                 </div>

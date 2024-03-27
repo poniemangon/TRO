@@ -43,3 +43,43 @@ $(document).ready(function() {
       $(".modal-payment").fadeOut();
     });
   });
+
+  $(document).ready(function() {
+    $('.option-two').hide();
+    $('.option-mp').click(function() {
+        $('.option-one').show();
+        $('.option-two').hide();
+        $(this).addClass('active-modal');
+        $('.option-tr').removeClass('active-modal');
+    });
+
+    $('.option-tr').click(function() {
+        $('.option-one').hide();
+        $('.option-two').show();
+        $(this).addClass('active-modal');
+        $('.option-mp').removeClass('active-modal');
+    });
+});
+
+$(document).ready(function() {
+  $('.increment').mousedown(function(event) {
+      event.preventDefault();
+      
+      var counter = $(this).closest('.counter');
+      var quantity = parseInt(counter.find('.quantity').text());
+      quantity++;
+      counter.find('.quantity').text(quantity);
+  });
+
+  $('.decrement').mousedown(function(event) {
+      event.preventDefault();
+      
+      var counter = $(this).closest('.counter');
+      var quantity = parseInt(counter.find('.quantity').text());
+      if (quantity > 1) {
+          quantity--;
+          counter.find('.quantity').text(quantity);
+      }
+  });
+});
+
